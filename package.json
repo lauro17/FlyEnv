@@ -8,7 +8,7 @@
   },
   "copyright": "Copyright© pengfei xu",
   "scripts": {
-    "build-dev-runner": "type scripts\\args.esbuild.dev-runner | for /F %i in ('findstr .') do npx esbuild %i",
+    "build-dev-runner": "cat scripts/args.esbuild.dev-runner | xargs npx esbuild",
     "web": "vite -c web/vite.config.ts",
     "web-build": "vite -c web/vite.config.ts build",
     "dev": "yarn run clean:dev && yarn run build-dev-runner && cross-env NODE_ENV=development TEST=electron node electron/dev-runner.js",

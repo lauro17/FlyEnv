@@ -3,12 +3,25 @@ import ZHFork from './zh/fork'
 import { createI18n } from 'vue-i18n'
 import type { I18n } from 'vue-i18n'
 
+import PTBRFork from './pt_br/fork'
+import ITITFork from './it_it/fork'
+import FRFRFork from './fr_fr/fork'
+
 const lang = {
   en: {
     fork: ENFork
   },
   zh: {
     fork: ZHFork
+  },
+  pt_br: {
+    fork: PTBRFork
+  },
+  it_it: {
+    fork: ITITFork
+  },
+  fr_fr: {
+    fork: FRFRFork
   }
 }
 
